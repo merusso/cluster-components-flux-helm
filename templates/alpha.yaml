@@ -40,6 +40,9 @@ spec:
       version: '6.5.1'
   interval: 10m0s
   values: {{ toYaml .Values.alpha.values | nindent 4 }}
+  dependsOn:
+    - name: bravo
+    - name: charlie
   postRenderers:
     - kustomize:
         # This doesn't work, `labels` isn't yet supported

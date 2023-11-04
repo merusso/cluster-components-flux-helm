@@ -13,7 +13,7 @@ bravo:
     h2c:
       enabled: true
 charlie:
-  enabled: false
+  enabled: true
   values:
     h2c:
       enabled: true
